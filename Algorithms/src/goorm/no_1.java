@@ -2,7 +2,7 @@ package goorm;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-
+ 
 public class no_1 {
 	public static void main(String[] args) throws Exception {
 		// Scanner 대신 사용  --> Scanner보다 빠르다
