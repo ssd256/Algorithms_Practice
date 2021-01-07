@@ -2,7 +2,7 @@ package goorm;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-
+ 
 public class no_9 {
 	public static void main(String[] args) throws Exception {
 		// 입력한 수 n에서 자기 자신을 뺀만큼 경기를 진행할 때 총 경기 수 구하기
