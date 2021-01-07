@@ -1,7 +1,7 @@
 package baekjoon;
 
 import java.util.Scanner;
-
+ 
 public class no_1330 {
 	 public static void main(String[] args){
 	        Scanner sc = new Scanner(System.in);  // 입력받는 수라서 Scanner 사용
