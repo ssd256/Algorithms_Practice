@@ -2,7 +2,7 @@ package goorm;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-
+ 
 public class no_7 {
 	public static void main(String[] args) throws Exception {
 	    // 첫 줄에는 입력할 수의 개수
