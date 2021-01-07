@@ -1,7 +1,7 @@
 package baekjoon;
 
 import java.util.Scanner;
-
+ 
 public class no_1000 {
 	public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
