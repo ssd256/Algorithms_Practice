@@ -4,7 +4,7 @@
 * 백준, 구름
     
 ### 2. JavaScript 문법  
-* **es6문법 공부
+* **es6문법 공부**
 1. 페이지 로딩 속도 개선[asyn, defer]
 2. Data type
 3. Operator
