@@ -1,6 +1,6 @@
-# 알고리즘, Html5, CSS3, JavaScript 문법 공부   
+# 알고리즘, 자료구조, Html5, CSS3, JavaScript 문법 공부   
     
-## 1. 알고리즘 자료구조 문제 풀기: Java, JavaScript  
+## 1. 알고리즘 문제 풀기: Java, JavaScript  
     
 ## 2. JavaScript 문법  
 - 페이지 로딩 속도 개선[asyn, defer]   
