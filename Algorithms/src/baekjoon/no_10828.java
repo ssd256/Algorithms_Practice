@@ -1,7 +1,10 @@
 package baekjoon;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class no_10828 {
 	
@@ -9,8 +12,13 @@ public class no_10828 {
 	public static int size = 0; // 스택 비었는지 유무확인 
 	
 	public static void main(String[] args) throws NumberFormatException, IOException {
+		// BufferedReader로 할 경우, StringTokenizer과 같이 사용 -> push할 때 값 분리해줘야 하니까
+		
 		Scanner sc = new Scanner(System.in);
+//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder(); // 결과값 담아줄 String 공간
+		
+//		StringTokenizer st;
 		
 		int num = sc.nextInt();
 	
@@ -18,10 +26,12 @@ public class no_10828 {
 		
 		for(int i = 0; i < num; i++) {
 			String str = sc.next();
+//			st = new StringTokenizer(br.readLine(), " ");
 			
 			switch(str) {
 			case "push" : 
 				push(sc.nextInt());
+//				push(Integer.parseInt(st.nextToken()));
 				break;
 			case "pop" : 
 				sb.append(pop()).append("\n");
