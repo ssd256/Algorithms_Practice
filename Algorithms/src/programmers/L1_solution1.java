@@ -18,7 +18,7 @@ public class L1_solution1 {
 			}
 			num++;
 		}
-		return answer;
+		return answer; 
 	}
 	
 	public static void main(String[] args) throws IOException {
