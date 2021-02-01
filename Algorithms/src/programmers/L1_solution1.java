@@ -24,7 +24,7 @@ public class L1_solution1 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		int input = br.read();
+		int input = br.read(); 
 		int result = solution(input);
 		System.out.println(result);
 	}
