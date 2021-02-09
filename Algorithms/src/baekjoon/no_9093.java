@@ -1,30 +1,49 @@
 package baekjoon;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
-import java.util.Scanner;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.Stack;
 
 public class no_9093 {
 	public static void main(String[] args) throws IOException {
-		Scanner sc = new Scanner(System.in);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		Stack<Character> stack = new Stack<Character>();
 		
-		int N = sc.nextInt();
-		sc.nextLine();	// 엔터 처리
+		String input = "";
+		int N = Integer.parseInt(br.readLine());
 		
-		while(N-- > 0) {
-			String input = sc.nextLine() + " "; // 글자 + 엔터 받음
-			for(int i = 0; i < input.length(); i++) {
-				if(input.charAt(i) == ' '){
+		for(int i = 0; i < N; i++) {
+			input = br.readLine(); 
+			input += "\n";	// 마지막 개행문자 추가
+			
+			StringBuilder sb = new StringBuilder("");
+			
+			for(int j = 0; j < input.length(); j++) {
+				// 띄어쓰기나 엔터를 만났을 때
+				if(input.charAt(j) == ' ' || input.charAt(j) == '\n'){
+					// stack의 data를 sb에 추가하고 stack 비움
 					while(!stack.isEmpty()) {
-						System.out.print(stack.pop());	// pop하면서 자연스럽게 거꾸로 나옴
+						sb.append(stack.peek()); 
+						stack.pop(); 
 					}
-					System.out.print(" ");
+					// 띄어쓰기를 만났을 때 stack에 추가
+					if(input.charAt(j) == ' ') {
+						sb.append(input.charAt(j));
+					}
 				} else {
-					stack.push(input.charAt(i)); // 한 글자씩 거꾸로 집어넣음
+					// 문자인 경우에도 stack에 추가
+					stack.push(input.charAt(j)); // 한 글자씩 거꾸로 집어넣음
 				}
 			}
-			System.out.println();
+			bw.write(sb.toString() + "\n"); 
 		}
+		// 잊지말자, close와 flush!
+		br.close();
+		bw.flush();
+		bw.close();
 	}
 }
